@@ -122,7 +122,7 @@ img {
 .bd-grid {
   display: grid;
   grid-template-columns: 100%;
-  column-gap: 2rem;
+  column-gap: 15rem;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -199,7 +199,84 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/*===== HOME =====*/
+.home {
+  background-color: var(--dark-color-lighten);
+  overflow: hidden;
+}
 
+.home__container {
+  height: calc(100vh - var(--header-height));
+}
+
+.home__sneaker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.home__shape {
+  width: 220px;
+  height: 220px;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+}
+
+.home__img {
+  position: absolute;
+  top: 1.5rem;
+  max-width: initial;
+  width: 275px;
+  transform: var(--rotate-img);
+}
+
+.home__new {
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-2);
+}
+
+.home__title {
+  font-size: var(--bigger-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.home__description {
+  margin-bottom: var(--mb-6);
+}
+
+/*BUTTONS*/
+.button {
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 1.125rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-0.25rem);
+}
+
+.button-light {
+  display: inline-flex;
+  color: var(--dark-color);
+  font-weight: var(--font-bold);
+  align-items: center;
+}
+
+.button-icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-1);
+  transition: 0.3s;
+}
+
+.button-light:hover .button-icon {
+  transform: translateX(0.25rem);
+}
 
 
 
@@ -245,5 +322,23 @@ img {
     display: none;
   }
 
- 
+  .home__container {
+    height: 100vh;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__sneaker {
+    order: 1;
+  }
+  .home__shape {
+    width: 376px;
+    height: 376px;
+  }
+  .home__img {
+    width: 470px;
+    top: 3.5rem;
+    right: 0;
+    left: -3rem;
+  }
 }
