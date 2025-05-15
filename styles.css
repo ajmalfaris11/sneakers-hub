@@ -354,6 +354,64 @@ img {
   color: var(--white-color);
 }
 
+/*===== COLLECTION =====*/
+
+.collection__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.collection__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color-lighten);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  min-height: 220px;
+  max-height: 250px;
+}
+
+
+.collection__data {
+  margin-top: auto;
+}
+
+.collection__name {
+  font-size: var(--bigger-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.collection_description {
+  margin-bottom: var(--mb-2);
+}
+
+.collection__card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.collection__img {
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 480px) {
+  .collection__card {
+    padding: 1.5rem;
+  }
+
+  .collection__name {
+    font-size: var(--big-font-size);
+  }
+}
+
+
 
 
 
