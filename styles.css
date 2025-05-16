@@ -412,6 +412,63 @@ img {
 }
 
 
+/* ===== WOMEN SNEAKERS ===== */
+
+.women__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Make each sneaker card flow nicely */
+.sneaker {
+  background-color: var(--dark-color-lighten);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.sneaker:hover {
+  transform: translateY(-5px);
+}
+
+.sneaker__img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.sneaker__name {
+  font-size: var(--big-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.sneaker__preci {
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 480px) {
+  .sneaker {
+    padding: 1.5rem;
+  }
+
+  .sneaker__img {
+    width: 130px;
+  }
+
+  .sneaker__name {
+    font-size: var(--normal-font-size);
+  }
+}
+
+
 
 
 
