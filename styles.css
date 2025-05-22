@@ -146,6 +146,11 @@ img {
   align-items: center;
 }
 
+
+  .nav__shop {
+    font-size: 1.8rem;
+  }
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
