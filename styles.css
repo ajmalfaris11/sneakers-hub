@@ -212,6 +212,9 @@ img {
 
 .home__container {
   height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__sneaker {
@@ -692,13 +695,13 @@ img {
     order: 1;
   }
   .home__shape {
-    width: 376px;
-    height: 376px;
+    width: 400px;
+    height: 400px;
   }
   .home__img {
-    width: 470px;
+    width: 550px;
     top: 3.5rem;
     right: 0;
-    left: -3rem;
+    left: -5rem;
   }
 }
