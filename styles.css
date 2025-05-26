@@ -705,3 +705,87 @@ img {
     left: -5rem;
   }
 }
+
+
+/* ===== HOME RESPONSIVE FIX ===== */
+
+@media screen and (max-width: 992px) {
+  .home__container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .home__sneaker {
+    margin-bottom: 2rem;
+  }
+
+  .home__img {
+    width: 230px;
+    top: 0.5rem;
+  }
+
+  .home__shape {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home__title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__container {
+    padding: 3rem 0;
+  }
+
+  .home__title {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  .home__new {
+    font-size: 1.2rem;
+  }
+
+  .home__description {
+    font-size: 0.95rem;
+  }
+
+  .home__img {
+    width: 200px;
+  }
+
+  .home__shape {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home__container {
+    padding: 2rem 0;
+  }
+
+  .home__title {
+    font-size: 1.8rem;
+  }
+
+  .home__img {
+    width: 160px;
+    transform: rotate(-20deg);
+  }
+
+  .home__shape {
+    width: 130px;
+    height: 130px;
+  }
+
+  .button {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
